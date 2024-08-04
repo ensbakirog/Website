@@ -1,0 +1,54 @@
+:root {
+	--background-color: #131519;
+
+	--body-height: 3000px;
+	--body-width: 3000px;
+
+	--top-bar-height: 50px;
+
+	--sidebar-width: 200px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: var(--background-color);
+
+	height: var(--body-height);
+	width: var(--body-width);
+}
+
+.top-bar {
+	background-color: lightblue;
+
+	height: var(--top-bar-height);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.sidebar {
+	background-color: pink;
+
+	width: var(--sidebar-width);
+
+	position: fixed;
+	top: var(--top-bar-height);
+	left: 0;
+	bottom: 0;
+}
+
+nav {
+	background-color: orange;
+
+	text-align: right;
+	
+	font-weight: bold;
+}
